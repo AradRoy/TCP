@@ -5,7 +5,7 @@
 #include "TCPserver.h"
 
 static int panelHandle;
-static unsigned int serverHandle;   // קליינט כל הנדל מייצג שיחה פעילה
+static unsigned int serverHandle; 
 static unsigned int clientHandle;
 
 int ServerFunc(unsigned handle, int xType, int errCode, void *callbackData);
@@ -42,7 +42,7 @@ int CVICALLBACK exitFunc (int panel, int event, void *callbackData,
 }
 
 
-int ServerFunc (unsigned handle, int xType, int errCode, void *callbackData) // ממשק עם קליינטים
+int ServerFunc (unsigned handle, int xType, int errCode, void *callbackData) 
 {
 	char received_text[200];
 	int bytes_received;
@@ -66,7 +66,7 @@ int ServerFunc (unsigned handle, int xType, int errCode, void *callbackData) // 
 }
 
 int CVICALLBACK openCloseServerFunc (int panel, int control, int event,
-									 void *callbackData, int eventData1, int eventData2)	// פונקציית יצירת שרת
+									 void *callbackData, int eventData1, int eventData2)	
 {
 	switch (event)
 	{
@@ -80,7 +80,7 @@ int CVICALLBACK openCloseServerFunc (int panel, int control, int event,
 
 
 int CVICALLBACK connectToServer (int panel, int control, int event,
-								 void *callbackData, int eventData1, int eventData2)	  // פונקציית חיבור לשרת
+								 void *callbackData, int eventData1, int eventData2)	  
 {
 	switch (event)
 	{
@@ -92,7 +92,7 @@ int CVICALLBACK connectToServer (int panel, int control, int event,
 	return 0;
 }
 
-int connectFunc (unsigned handle, int xType, int errCode, void *callbackData)  // פונקציית ממשק עם שרת
+int connectFunc (unsigned handle, int xType, int errCode, void *callbackData)  
 {
 
 	char text[200];
@@ -120,7 +120,7 @@ int CVICALLBACK sendTextToserver (int panel, int control, int event,
 		case EVENT_COMMIT:
 			char send_text[200];
 			GetCtrlVal (panelHandle, PANEL_STRING, send_text);
- 			ClientTCPWrite (serverHandle, send_text, strlen(send_text)+1, 0); //שולח הודעה לשרת
+ 			ClientTCPWrite (serverHandle, send_text, strlen(send_text)+1, 0); 
 			break;
 	}
 	return 0;
