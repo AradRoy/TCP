@@ -1,0 +1,35 @@
+[main]
+Class="Function"
+Prototype="int main(int argc, char *argv[]);"
+SourceLocation="c:\Users\Roy\Documents\Embedded_systems\Homework\Week 3 - TCP Server\Server Client Roy\Client.c:18:5"
+
+[exitFunc]
+Class="Function"
+Prototype="int exitFunc(int panel, int event, void *callbackData, int eventData1, int eventData2);"
+SourceLocation="c:\Users\Roy\Documents\Embedded_systems\Homework\Week 3 - TCP Server\Server Client Roy\Client.c:32:17"
+
+[connectToServer]
+Class="Function"
+Prototype="int connectToServer(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+SourceLocation="c:\Users\Roy\Documents\Embedded_systems\Homework\Week 3 - TCP Server\Server Client Roy\Client.c:50:17"
+
+[connectFunc]
+Class="Function"
+Prototype="int connectFunc(unsigned int Handle, int xType, int errCode, void *callbackData);"
+SourceLocation="c:\Users\Roy\Documents\Embedded_systems\Homework\Week 3 - TCP Server\Server Client Roy\Client.c:63:5"
+
+[sendText]
+Class="Function"
+Prototype="int sendText(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+SourceLocation="c:\Users\Roy\Documents\Embedded_systems\Homework\Week 3 - TCP Server\Server Client Roy\Client.c:81:17"
+
+[canvasFunc]
+Class="Function"
+Prototype="int canvasFunc(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+SourceLocation="c:\Users\Roy\Documents\Embedded_systems\Homework\Week 3 - TCP Server\Server Client Roy\Client.c:94:17"
+
+[timerFunc]
+Class="Function"
+Prototype="int timerFunc(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+SourceLocation="c:\Users\Roy\Documents\Embedded_systems\Homework\Week 3 - TCP Server\Server Client Roy\Client.c:131:17"
+
